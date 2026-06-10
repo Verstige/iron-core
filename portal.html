@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iron Core Fitness | Customer Portal Mockup</title>
+    <meta
+      name="description"
+      content="A concept customer portal, class scheduler, and admin dashboard for Iron Core Fitness."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body class="portal-page">
+    <div class="progress-rail" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <header class="site-header is-scrolled" id="top">
+      <a class="brand" href="index.html" aria-label="Back to Iron Core Fitness home">
+        <span class="brand-mark">IC</span>
+        <span>
+          <strong>Iron Core</strong>
+          <small>Portal</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Website</a>
+        <a href="#customer">Customer App</a>
+        <a href="#scheduler">Scheduler</a>
+        <a href="#admin">Admin</a>
+      </nav>
+      <a class="header-cta" href="index.html#contact">Start Simple</a>
+    </header>
+
+    <main>
+      <section class="portal-hero">
+        <div class="portal-hero-copy reveal">
+          <p class="eyebrow">Optional next phase</p>
+          <h1>Customer Portal + Class Scheduler + Admin Hub.</h1>
+          <p>
+            A simple example of what Iron Core could grow into after the website: one place for
+            customers to manage plans, reference classes, follow programs, and one admin space for
+            the business to manage every customer relationship.
+          </p>
+        </div>
+        <div class="portal-device reveal delay-1" aria-label="Customer portal phone preview">
+          <div class="device-status">
+            <span>9:41</span>
+            <span>IC</span>
+          </div>
+          <div class="device-greeting">
+            <small>Welcome back</small>
+            <strong>Maya</strong>
+          </div>
+          <div class="plan-ring">
+            <span>82%</span>
+            <p>Program progress</p>
+          </div>
+          <div class="device-actions">
+            <button>Manage Plan</button>
+            <button>Book Class</button>
+          </div>
+          <div class="device-list">
+            <div>
+              <span>Today</span>
+              <strong>Band Strength B</strong>
+            </div>
+            <div>
+              <span>Next</span>
+              <strong>Core Slider Flow</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portal-section" id="customer">
+        <div class="section-head reveal">
+          <p class="eyebrow">Customer portal</p>
+          <h2>Customers manage the business relationship without texting back and forth.</h2>
+          <p>
+            The portal would give customers a clear account area for plans, subscriptions,
+            services, payment methods, saved workouts, and support requests.
+          </p>
+        </div>
+        <div class="portal-feature-grid">
+          <article class="portal-feature reveal">
+            <span>01</span>
+            <h3>Subscriptions</h3>
+            <p>View active plans, renewal dates, saved cards, invoices, upgrades, and pauses.</p>
+          </article>
+          <article class="portal-feature reveal delay-1">
+            <span>02</span>
+            <h3>Services</h3>
+            <p>Manage coaching, product bundles, training programs, and support requests.</p>
+          </article>
+          <article class="portal-feature reveal delay-2">
+            <span>03</span>
+            <h3>Programs</h3>
+            <p>Access band, slider, mobility, and core plans with progress tracking.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="scheduler">
+        <div class="scheduler-shell reveal">
+          <aside class="schedule-sidebar">
+            <p class="eyebrow">Class app</p>
+            <h2>Class schedule customers can actually use.</h2>
+            <p>
+              A lightweight schedule view for classes, live sessions, product demos, mobility
+              workshops, or community challenges.
+            </p>
+          </aside>
+          <div class="schedule-board">
+            <div class="schedule-day">
+              <strong>Mon</strong>
+              <article>
+                <span>7:00 AM</span>
+                <b>Band Strength</b>
+                <small>12 spots</small>
+              </article>
+              <article>
+                <span>6:00 PM</span>
+                <b>Glute Activation</b>
+                <small>8 spots</small>
+              </article>
+            </div>
+            <div class="schedule-day hot">
+              <strong>Tue</strong>
+              <article>
+                <span>12:15 PM</span>
+                <b>Core Slider Conditioning</b>
+                <small>Waitlist open</small>
+              </article>
+              <article>
+                <span>7:30 PM</span>
+                <b>Mobility Reset</b>
+                <small>14 spots</small>
+              </article>
+            </div>
+            <div class="schedule-day">
+              <strong>Wed</strong>
+              <article>
+                <span>8:00 AM</span>
+                <b>Travel Band Circuit</b>
+                <small>Online</small>
+              </article>
+              <article>
+                <span>5:45 PM</span>
+                <b>Full Body Flow</b>
+                <small>10 spots</small>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section admin-section" id="admin">
+        <div class="section-head reveal">
+          <p class="eyebrow">Admin portal</p>
+          <h2>One operating dashboard for customers, plans, and activity.</h2>
+        </div>
+        <div class="admin-dashboard reveal">
+          <aside class="admin-nav">
+            <strong>Iron Core Admin</strong>
+            <a class="active" href="#admin">Overview</a>
+            <a href="#admin">Customers</a>
+            <a href="#admin">Subscriptions</a>
+            <a href="#admin">Classes</a>
+            <a href="#admin">Messages</a>
+          </aside>
+          <div class="admin-main">
+            <div class="admin-stats">
+              <article>
+                <span>Active Customers</span>
+                <strong>428</strong>
+              </article>
+              <article>
+                <span>Monthly Revenue</span>
+                <strong>$12.8k</strong>
+              </article>
+              <article>
+                <span>Classes Booked</span>
+                <strong>186</strong>
+              </article>
+            </div>
+            <div class="admin-table">
+              <div class="table-row head">
+                <span>Customer</span>
+                <span>Plan</span>
+                <span>Status</span>
+                <span>Next action</span>
+              </div>
+              <div class="table-row">
+                <span>Maya R.</span>
+                <span>Band + Slider</span>
+                <span class="pill good">Active</span>
+                <span>Renewal in 8 days</span>
+              </div>
+              <div class="table-row">
+                <span>Chris D.</span>
+                <span>Mobility Pack</span>
+                <span class="pill warn">Trial</span>
+                <span>Send upgrade offer</span>
+              </div>
+              <div class="table-row">
+                <span>Alina P.</span>
+                <span>Core Program</span>
+                <span class="pill good">Active</span>
+                <span>Booked Tue class</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portal-close section">
+        <div class="cta-box reveal">
+          <p class="eyebrow">Start simple</p>
+          <h2>Website first. Platform when the business is ready.</h2>
+          <p>
+            The immediate offer can stay grounded: a cleaner website for $450, with ongoing website
+            and marketing support starting at $149/month. The portal is the bigger-picture example
+            of where the brand could go next.
+          </p>
+          <a class="button button-primary" href="index.html">Back to Website Mockup</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
